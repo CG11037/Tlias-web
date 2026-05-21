@@ -1,7 +1,6 @@
 package cg.example.tliaswebdemo.controller;
 
 import cg.example.tliaswebdemo.pojo.Result;
-import cg.example.tliaswebdemo.serviec.DeptService;
 import cg.example.tliaswebdemo.serviec.impl.DeptServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
