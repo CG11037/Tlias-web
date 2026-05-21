@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Tlias-web-demo
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Tlias_db
+    username: root
+
+logging:
+  level:
+    cg.example.tliaswebdemo: debug

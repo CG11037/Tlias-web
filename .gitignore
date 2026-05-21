@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+
+# Maven
+target/
+
+# Java compiled classes
+*.class
+
+# Local config (contains sensitive data)
+application-local.yaml
+
+# OS generated files
+.DS_Store
+Thumbs.db
