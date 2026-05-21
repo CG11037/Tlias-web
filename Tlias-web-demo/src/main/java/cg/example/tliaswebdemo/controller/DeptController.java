@@ -1,12 +1,10 @@
 package cg.example.tliaswebdemo.controller;
 
+import cg.example.tliaswebdemo.pojo.Dept;
 import cg.example.tliaswebdemo.pojo.Result;
 import cg.example.tliaswebdemo.serviec.impl.DeptServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class DeptController {
@@ -28,6 +26,18 @@ public class DeptController {
     public Result delete(@RequestParam(value = "id",required = false) Integer deptId){
         System.out.println("删除部门数据,id为"+deptId);
         deptServiceImpl.deleteById(deptId);
+        return Result.success();
+    }
+
+    @PostMapping("/depts")
+
+    // @RequestBody：将请求体中的json数据封装到到方法形参中
+    // 例如：name参数被封装到dept实体类中
+    // 要求请求体中的数据格式为json格式
+    // 并且实体类中一定要有同名的字段
+    public Result add(@RequestBody Dept dept){
+        System.out.println("添加部门数据，部门名称："+dept.getName());
+        deptServiceImpl.insert(dept);
         return Result.success();
     }
 }
