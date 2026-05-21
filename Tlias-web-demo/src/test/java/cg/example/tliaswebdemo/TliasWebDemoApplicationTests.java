@@ -9,9 +9,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TliasWebDemoApplicationTests {
     @Autowired
     DeptServiceImpl deptService;
+
     @Test
     public void testSelectDeptAll(){
         System.out.println(deptService.findAll());
+    }
+
+    @Test
+    public void testDeleteDeptById(){
+        Integer id=20;
+        deptService.deleteById(id);
     }
 
 }
