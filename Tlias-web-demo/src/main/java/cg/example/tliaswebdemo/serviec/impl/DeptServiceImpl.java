@@ -30,4 +30,8 @@ public class DeptServiceImpl implements DeptService {
         deptMapper.insert(dept);
     }
 
+    public Dept getById(Integer deptId){
+        return deptMapper.getById(deptId);
+    }
+
 }

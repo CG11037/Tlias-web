@@ -22,4 +22,7 @@ public interface DeptMapper {
     // 可以通过#{属性名}从实体类中自动提取属性值
     @Insert("insert into dept(name,create_time,update_time) values(#{name},#{createTime},#{updateTime})")
     public void insert(Dept dept);
+
+    @Select("select id,name,create_time,update_time from dept where id=#{deptId}")
+    public Dept getById(Integer deptId);
 }
