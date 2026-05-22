@@ -76,9 +76,6 @@
         <appender-ref ref="FILE" />
         <appender-ref ref="ERROR_FILE" />
     </logger>
-    <!-- MyBatis SQL 语句打印（命名空间级） -->
-    <logger name="cg.example.tliaswebdemo" level="DEBUG" />
-
     <!-- ==================== 全局日志级别 ==================== -->
     <!--
         全局默认级别：INFO
