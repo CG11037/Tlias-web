@@ -12,4 +12,6 @@ public interface DeptService {
     public void insert(Dept dept);
 
     public Dept getById(Integer deptId);
+
+    public void updateById(Dept dept);
 }

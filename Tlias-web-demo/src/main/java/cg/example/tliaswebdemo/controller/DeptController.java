@@ -46,9 +46,17 @@ public class DeptController {
     // 如果请求参数为路径参数，需要在上面用{}包装
     // 并且需要使用@PathVariable注解将路径参数与方法形参绑定
     // 但是如果路径参数名和形参名一致可以省略掉("id")
+    // 也可以有多个路径参数但是需要注解一一指定
     public Result getInfo(@PathVariable("id") Integer deptId){
         System.out.println("根据id查询部门数据，id为："+deptId);
         Dept dept=deptServiceImpl.getById(deptId);
         return Result.success(dept);
+    }
+
+    @PutMapping("/depts")
+    public Result updateById(@RequestBody Dept dept){
+        System.out.println("更新部门数据，部门名称："+dept.getName()+"，部门id："+dept.getId());
+        deptServiceImpl.updateById(dept);
+        return Result.success();
     }
 }
