@@ -1,5 +1,6 @@
 package cg.example.tliaswebdemo;
 
+import cg.example.tliaswebdemo.pojo.Dept;
 import cg.example.tliaswebdemo.serviec.impl.DeptServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,5 @@ class TliasWebDemoApplicationTests {
         Integer id=20;
         deptService.deleteById(id);
     }
-
 
 }
