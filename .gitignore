@@ -7,6 +7,9 @@ target/
 # Java compiled classes
 *.class
 
+# Log files
+logs /
+
 # Local config (contains sensitive data)
 application-local.yaml
 
