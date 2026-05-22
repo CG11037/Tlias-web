@@ -1,0 +1,25 @@
+2026-05-22 16:21:08.076 [restartedMain] INFO  cg.example.tliaswebdemo.TliasWebDemoApplication - Starting TliasWebDemoApplication using Java 21.0.10 with PID 19197 (/home/cg_20233594/mylearn/code/blackma/Tlias-web/Tlias-web-demo/target/classes started by cg_20233594 in /home/cg_20233594/mylearn/code/blackma/Tlias-web)
+2026-05-22 16:21:08.077 [restartedMain] DEBUG cg.example.tliaswebdemo.TliasWebDemoApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-22 16:21:08.078 [restartedMain] INFO  cg.example.tliaswebdemo.TliasWebDemoApplication - The following 1 profile is active: "local"
+2026-05-22 16:21:08.109 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-22 16:21:08.109 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-22 16:21:08.677 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-22 16:21:08.684 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-22 16:21:08.686 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-22 16:21:08.686 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-22 16:21:08.709 [restartedMain] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 599 ms
+2026-05-22 16:21:09.021 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-22 16:21:09.030 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-22 16:21:09.034 [restartedMain] INFO  cg.example.tliaswebdemo.TliasWebDemoApplication - Started TliasWebDemoApplication in 1.209 seconds (process running for 1.743)
+2026-05-22 16:21:15.674 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-22 16:21:15.675 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-22 16:21:15.676 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-05-22 16:21:15.696 [http-nio-8080-exec-2] INFO  cg.example.tliaswebdemo.controller.DeptController - 查询所有部门数据
+2026-05-22 16:21:15.707 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-22 16:21:16.047 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@918c70e
+2026-05-22 16:21:16.049 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-22 16:21:53.191 [http-nio-8080-exec-3] INFO  cg.example.tliaswebdemo.controller.DeptController - 根据id查询部门数据，id为：10
+2026-05-22 16:22:14.035 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-22 16:22:14.038 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-22 16:22:14.043 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-22 16:22:14.049 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
